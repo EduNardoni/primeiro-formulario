@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Survey Form</title>
+    <link rel="stylesheet" href="styles.css" />
+</head>
+
+<body>
+    <h1 id="title">Survey Form</h1>
+    <p id="description">This is my first survey made by my own</p>
+    <form id="survey-form">
+        <fieldset>
+            <label for="name" id="name-label">
+                Name <input type="text" name="name" id="name" placeholder="Enter your Name" required>
+            </label>
+            <label for="email" id="email-label">Email <input type="email" name="email" id="email"
+                    placeholder="Enter your Email" required>
+            </label>
+            <label for="number" id="number-label">Age (optional) <input type="number" name="number" id="number" min="13"
+                    max="130" placeholder="Age">
+            </label>
+            Which option best describes your current role? <select id="dropdown" name="dropdown">
+                <option value="">Choose one</option>
+                <option value="1">Student</option>
+                <option value="2">Full time job</option>
+                <option value="3">Other</option>
+                <option value="4">Prefer not to say</option>
+            </select>
+        </fieldset>
+
+        <fieldset>
+            <label>Would you recommend my work to a friend?</label>
+            <label id="definitely"><input id="definitely" name="recommend" type="radio" value="definitely"
+                    class="inline" checked />
+                Definitely </label>
+            <label id="maybe"><input id="maybe" name="recommend" type="radio" value="maybe" class="inline" /> Maybe
+            </label>
+            <label id="not-sure"><input id="not-sure" name="recommend" type="radio" value="not-sure" class="inline" />
+                Not sure
+            </label>
+
+        </fieldset>
+
+
+        <fieldset>
+            <label for="knowledge">Which of these options are you familiar with? (ckeck all that apply)</label>
+            <label for="javascript">
+                <input id="javascript" type="checkbox" value="javascript" class="inline" /> JavaScript
+            </label>
+            <label for="java">
+                <input id="java" type="checkbox" value="java" class="inline" /> Java
+            </label>
+            <label for="html">
+                <input id="html" type="checkbox" value="html" class="inline" /> HTML
+            </label>
+            <label for="css">
+                <input id="css" type="checkbox" value="css" class="inline" /> CSS
+            </label>
+            <label for="python">
+                <input id="python" type="checkbox" value="python" class="inline" /> Python
+            </label>
+            <label for="front-end">
+                <input id="front-end" type="checkbox" value="front-end" class="inline" /> Front-end
+            </label>
+            <label for="back-end">
+                <input id="back-end" type="checkbox" value="back-end" class="inline" /> Back-end
+            </label>
+            <label for="full-stack">
+                <input id="full-stack" type="checkbox" value="full-stack" class="inline" /> Full-Stack
+            </label>
+
+            <label for="comments-suggestions"> Any comments or suggestions of what I can improve?
+                <textarea id="comments-suggestions" name="comments-suggestions" rows="3" cols="30"
+                    placeholder="Leave your suggestions here..."></textarea>
+            </label>
+        </fieldset>
+        <input id="submit" type="submit" value="Submit" />
+
+        </fieldset>
+    </form>
+</body>
+
+
+</html>
